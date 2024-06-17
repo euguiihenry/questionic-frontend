@@ -1,7 +1,7 @@
 {
   "name": "questionic-frontend",
   "version": "1.0.0",
-  "description": "QuestioNIC is an app to help student to study",
+  "description": "QuestioNIC is an app to help students to study",
   "main": "app.py",
   "scripts": {
     "test": "python app.py"
