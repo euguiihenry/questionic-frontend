@@ -1,0 +1,22 @@
+{
+  "name": "questionic-frontend",
+  "version": "1.0.0",
+  "description": "QuestioNIC is an app to help student to study",
+  "main": "app.py",
+  "scripts": {
+    "test": "python app.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euguiihenry/questionic-frontend.git"
+  },
+  "keywords": [
+    "QuestioNIC"
+  ],
+  "author": "Henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euguiihenry/questionic-frontend/issues"
+  },
+  "homepage": "https://github.com/euguiihenry/questionic-frontend#readme"
+}

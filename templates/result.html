@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Test Results</h1>
+    <p>Your Score: {{ score }}/10</p>
+    <ul>
+        {% for correction in corrections %}
+            <li>
+                <p>{{ loop.index }}. {{ correction.question['question'] }}</p>
+                <p>Your answer: {{ correction.question['options'][correction.selected_answer] }} - 
+                    {% if correction.is_correct %}
+                        <span style="color: green;">Correct</span>
+                    {% else %}
+                        <span style="color: red;">Incorrect</span> (Correct: {{ correction.question['options'][correction.question['correct_answer']] }})
+                    {% endif %}
+                </p>
+                <p>Explanation: {{ correction.question['explanation'] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>
